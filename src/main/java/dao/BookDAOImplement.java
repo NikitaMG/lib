@@ -11,15 +11,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookDAOImpl implements BookDAO{
+public class BookDAOImplement implements BookDAO{
 
     private final Connection connection;
 
-    public  BookDAOImpl() {
+    public BookDAOImplement() {
         this.connection = new DatabaseConf().getDBConnection();
     }
 
-    public BookDAOImpl(Connection sqlConnection) {
+    public BookDAOImplement(Connection sqlConnection) {
         this.connection = sqlConnection;
     }
 
